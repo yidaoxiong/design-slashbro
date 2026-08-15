@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="由 awesome-design-md 中的 DESIGN.md 自动生成的品牌设计示例库。">
+  <title>DESIGN.md 品牌示例库</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23171713'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='19' font-weight='700' fill='white'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-brand" href="#" aria-label="返回品牌示例库首页">
+      <span class="brand-mark" aria-hidden="true">D</span>
+      <span>DESIGN.md LAB</span>
+    </a>
+    <div class="header-meta">
+      <p><span id="brand-total">0</span> 个品牌设计示例</p>
+      <a class="slashbro-signature" href="https://slashbro.top" target="_blank" rel="noreferrer" aria-label="design by Slashbro">
+        <span class="slashbro-symbol" aria-hidden="true">/</span>
+        <span><small>design by</small><strong>Slashbro</strong></span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery-view" class="gallery-view" aria-labelledby="gallery-title">
+      <div class="intro">
+        <p class="eyebrow">AWESOME DESIGN.MD · LIVE EXAMPLES</p>
+        <h1 id="gallery-title">把设计规范，变成看得见的页面。</h1>
+        <p>每个示例直接读取对应品牌的配色、字体、圆角、氛围与组件原则，并映射到同一套可比较的页面结构中。</p>
+      </div>
+
+      <div class="toolbar" aria-label="品牌筛选">
+        <label class="search-field">
+          <span class="sr-only">搜索品牌</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.4-4.4m2.4-5.1A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input id="brand-search" type="search" placeholder="搜索品牌、类别或风格…" autocomplete="off">
+        </label>
+        <label>
+          <span class="sr-only">选择类别</span>
+          <select id="category-filter">
+            <option value="all">全部类别</option>
+          </select>
+        </label>
+        <p class="result-count" aria-live="polite"><span id="visible-count">0</span> 个结果</p>
+      </div>
+
+      <div id="brand-grid" class="brand-grid"></div>
+      <p id="empty-state" class="empty-state" hidden>没有找到匹配的品牌。</p>
+    </section>
+
+    <section id="detail-view" class="detail-view" hidden aria-labelledby="detail-title">
+      <div class="detail-toolbar">
+        <button id="back-button" class="back-button" type="button">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+          返回全部品牌
+        </button>
+        <a id="source-link" class="source-link" href="#">查看 DESIGN.md</a>
+      </div>
+      <div id="brand-example"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Examples are generated from local DESIGN.md sources for visual comparison.</p>
+    <a class="footer-signature" href="https://slashbro.top" target="_blank" rel="noreferrer">design by Slashbro</a>
+  </footer>
+
+  <noscript>请启用 JavaScript 查看全部品牌示例。</noscript>
+  <script src="brands.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
