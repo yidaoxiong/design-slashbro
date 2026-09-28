@@ -83,6 +83,13 @@
 
   function abstractVisual(brand) {
     const name = escapeHtml(brand.name);
+    if (brand.archetype === "industrial") {
+      return `<div class="hero-visual visual-industrial">
+        <div class="industrial-band"><i></i><i></i><i></i></div>
+        <img src="assets/bergstrom-logo-light.jpeg" alt="Bergstrom official logo">
+        <div class="industrial-readout"><span>THERMAL SYSTEMS</span><b>HEAT / COOL</b><small>ENGINEERED CLIMATE CONTROL</small></div>
+      </div>`;
+    }
     if (brand.archetype === "dashboard") {
       return `<div class="hero-visual visual-dashboard">
         <div class="metric"><span>ACTIVE</span><strong>24.8K</strong><small>+18.4%</small></div>
